@@ -6,6 +6,11 @@
   <div class="content-wrapper">
     <div class="container">
 
+
+      <select>
+        <option [value]="uf.id" *ngFor="let uf of map">{{ uf.name }}</option>
+      </select>
+
       <router-outlet></router-outlet>
 
     </div>
